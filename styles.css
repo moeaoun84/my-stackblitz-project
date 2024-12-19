@@ -1,0 +1,630 @@
+/* General Styles */
+body {
+  font-family: Calibri, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F7F7F7; /* Cloudy Gray */
+}
+
+/* Header Section */
+header {
+  background-color: #014038; /* Canopy Green */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  height: 100px;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: Roboto, sans-serif; 
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome Section */
+#welcome {
+  background-color: #014038; /* Canopy Green */
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+#welcome h1 {
+  font-family: "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Featured Plants Section */
+#featured-plants {
+  text-align: center;
+  padding: 20px;
+}
+
+#featured-plants h2 {
+  font-family: "Impact", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Product List Container */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%; 
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+/* Product Image */
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Product Name */
+.product-card h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Product Price */
+.product-card p {
+  font-family: "Calibri", sans-serif;
+  font-size: 16px;
+  color: #014038;
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+.product-card button {
+  background-color: #014038; /* Canopy Green */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: auto; 
+}
+
+/* Hover effects for the button */
+.product-card button:hover {
+  background-color: #96BAA0; /* Meadow Mist */
+}
+
+/* Hover effect for the product card */
+.product-card:hover {
+  transform: translateY(-5px); 
+}
+
+/* Categories Section */
+#categories {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #F0C06D; 
+}
+
+#categories h2 {
+  font-family: "Impact", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.category-card {
+  background-color: #fff;
+  padding: 20px;
+  width: 23%; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Cart Section */
+#cart {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#cart h1 {
+  font-family: 'Times New Roman', Times, serif; 
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Cart Items Container */
+.cart-items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.cart-item {
+  display: list-item;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  background-color: #F9F9F9;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Adjust the image size and alignment */
+.cart-item .item-image img {
+  max-width: 80px;
+  height: auto;
+}
+
+/* Style the item details */
+.cart-item .item-details {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.cart-item .item-details h3 {
+  font-family: "Roboto", sans-serif; 
+  font-size: 16px; 
+  font-weight: bold; 
+  margin-bottom: 10px;
+}
+
+.cart-item .item-details p {
+  font-family: "Calibri", sans-serif; /* Body */
+  font-size: 16px;
+  color: #014038;
+}
+
+/* Item total price styling */
+.cart-item .item-total p {
+  font-family: "Roboto", sans-serif; /* Body Strong */
+  font-size: 16px;
+  font-weight: bold;
+  color: #014038;
+}
+
+/* Position the Remove button */
+.cart-item .remove-item {
+  background-color: #96BAA0; 
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-family: "Calibri", sans-serif; /* Body */
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px; 
+  transition: "background-color" 0.3s;
+}
+
+.cart-item .remove-item:hover {
+  background-color: #014038; /* Canopy Green */
+}
+
+
+/* Quantity Controls */
+.item-quantity-controls {
+  display: contents;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-quantity-controls button {
+  background-color: #f0c06d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-family: "Calibri", sans-serif; /* Body */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.item-quantity-controls button:hover {
+  background-color: #f5a623;
+}
+
+.item-quantity {
+  font-family: "Roboto", sans-serif; /* Body Strong */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Cart Summary Section */
+.cart-summary {
+  margin-top: 20px;
+  font-family: Calibri, sans-serif; /* Body Large */
+  font-size: 20px;
+  color: #014038;
+}
+
+#checkout-button {
+  background-color: #014038; /* Canopy Green */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-family: Calibri, sans-serif; /* Body Large */
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#checkout-button:hover {
+  background-color: #96BAA0; /* Meadow Mist */
+}
+
+/* Customer Reviews Section */
+#reviews {
+  background-color: #F7F7F7; /* Cloudy Gray */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#reviews h2 {
+  font-family: "Impact", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.review {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 45%;
+  text-align: center;
+}
+
+.review p {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.review strong {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* Contact Section */
+#contact {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #F7F7F7; /* Cloudy Gray */
+}
+
+#contact h1 {
+  font-family: "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-family: "Calibri", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+#contact-form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical; 
+}
+
+/* Submit Button Styling */
+.submit-btn {
+  background-color: #014038; /* Canopy Green */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #96BAA0; /* Meadow Mist */
+}
+/* About Us Section */
+#about {
+  padding: 40px 20px;
+  background-color: #F7F7F7; /* Cloudy Gray */
+  text-align: center;
+}
+
+#about h1 {
+  font-family: "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#about h2 {
+  font-family: "Impact", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#about p {
+  font-family: "Calibri", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#about ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+#about ul li {
+  font-family: "Calibri", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+/* Footer Styles */
+footer {
+  background-color: #014038; /* Canopy Green */
+  color: white;
+  font-family: "Comfortaa", cursive;
+  font-size: 8px; 
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Footer container - aligns items in rows */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px; 
+  margin-bottom: 10px; 
+  padding: 0 15px; 
+}
+
+/* Logo and Name */
+.footer-logo {
+  text-align: center; 
+  flex: 1;
+  min-width: 100px;
+}
+
+.footer-logo-img {
+  height: 30px; 
+  margin-bottom: 5px;
+}
+
+.footer-name {
+  font-size: 10px; 
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+/* Quick Links Section */
+.quick-links {
+  text-align: left; 
+  flex: 2; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 10px; 
+  padding-right: 10px; 
+  align-items: center; 
+}
+
+.quick-links-title {
+  font-size: 10px; 
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.quick-links ul {
+  list-style-type: disc;
+  padding-left: 30px; 
+  margin: 0 auto; 
+  display: inline-block;
+  text-align: left;
+}
+
+.quick-links li {
+  font-size: 10px; 
+  margin-bottom: 3px;
+}
+
+.quick-links a {
+  color: #96BAA0;
+  text-decoration: none;
+}
+
+.quick-links a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Info Section */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  align-items: flex-end; 
+  padding-left: 20px; 
+}
+
+.contact-info p {
+  font-size: 10px;
+  margin: 3px 0;
+  color: #96BAA0;
+}
+
+/* Follow Us Section */
+.follow-us {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; 
+  gap: 15px;
+  padding-right: 20px;
+  align-items: flex-end
+}
+
+.follow-us a {
+  display: inline-block;
+  color: #96BAA0;
+}
+
+.follow-us img {
+  width: 18px; 
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.follow-us img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Copyright */
+footer p {
+  font-size: 8px; 
+  margin-top: 5px; 
+  color: #96BAA0;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center; 
+  }
+  
+  .footer-logo {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  
+  .quick-links {
+      text-align: center; 
+  }
+
+  .contact-info {
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .follow-us {
+      justify-content: center;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bloom Valley Nursery</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="cart.js" defer></script> <!-- Add this line to handle cart logic -->
+    <script src="https://kit.fontawesome.com/dba77f2181.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Bloom Valley Nursery Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you! Please fill out the form below, and we will get back to you as soon as possible.</p>
+
+        <form id="contact-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+            <label>Reason for communication:
+            <select name="commenttype">
+                 <optgroup label="Feedback">
+                        <option value="comment">Comment</option>
+                        <option value="compliment">Compliment</option>
+                        <option value="complaint">Complaint</option>
+                 </optgroup>
+                 <optgroup label="Request">
+                        <option value="catering">Custom Order</option>
+                        <option value="suggestion">Suggestion</option>
+                 </optgroup>
+            </select>
+          </label><br>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo and Name Section -->
+            <div class="footer-logo">
+                <a href="index.html"><img src="img/logo.png" alt="Bloom Valley Nursery Logo" class="footer-logo-img"></a>
+                <p class="footer-name">&copy; 2024 Bloom Valley Nursery</p>
+            </div>
+
+            <!-- Quick Links Section (Centered) -->
+            <div class="quick-links">
+                <p class="quick-links-title">Quick Links</p>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Customer Feedback</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <p><strong>Address:</strong> 123 Bloom Valley Rd, FL</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> contact@bloomvalleynursery.com</p>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div class="follow-us">
+                <a href="https://facebook.com"> <i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href="https://instagram.com"> <i class="fa-brands fa-instagram fa-2xl"></i>
+                <a href="https://x.com"> <i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+                <a href="https://pinterest.com"><i class="fa-brands fa-pinterest fa-2xl"></i></a>
+            </div>
+        </div>
+    </footer>   
+</body>
+</html>
